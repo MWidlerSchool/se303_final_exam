@@ -4,9 +4,10 @@
 #       write.
 
 def word_count(beginning, middle, conclusion)
-  beginning.split.size +
-  middle.split.size +
-  conclusion.split.size
+  letter = Letter.new(beginning, middle, conclusion)
+  letter.beginning.split.size +
+  letter.middle.split.size +
+  letter.conclusion.split.size
 end
 
 def letter_count(beginning, middle, conclusion)
@@ -22,7 +23,7 @@ end
 class Letter
   attr_reader :beginning, :middle, :conclusion
 
-  def initialize(_eginning, middle, conclusion)
+  def initialize(beginning, middle, conclusion)
     @beginning = beginning
     @middle = middle
     @conclusion = conclusion
