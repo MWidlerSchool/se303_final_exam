@@ -35,4 +35,10 @@ class Letter
     middle.split.size +
     conclusion.split.size
   end
+
+  def letter_count()
+    beginning.size + 
+    middle.size + 
+    conclusion.size
+  end
 end
