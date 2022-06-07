@@ -37,7 +37,7 @@ class Farm
       # Remove the plot name before iterating over the plants.
       plot.drop(1).each do |_plant|
         plant = Plant.new(_plant[0], _plant[1])
-        total += _plant[1]
+        total += plant.height
       end
     end
     total
