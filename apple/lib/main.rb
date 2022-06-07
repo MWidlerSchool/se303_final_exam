@@ -10,7 +10,7 @@ def story
   middle << "\n"
   middle << "\n"
   conclusion = "And that was it."
-  first + middle + conclusion
+  first + getNewlines(5) + conclusion
 end
 
 def getNewlines(reps)
