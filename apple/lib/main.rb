@@ -3,12 +3,6 @@
 
 def story
   first = "Mr. Dursley was the director of a firm called Grunnings, which made drills."
-  middle = ""
-  middle << "\n"
-  middle << "\n"
-  middle << "\n"
-  middle << "\n"
-  middle << "\n"
   conclusion = "And that was it."
   first + getNewlines(5) + conclusion
 end
