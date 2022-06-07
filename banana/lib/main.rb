@@ -12,6 +12,7 @@ def letter_count(beginning, middle, conclusion)
   letter.beginning.size + 
   letter.middle.size + 
   letter.conclusion.size
+  Letter.new(beginning, middle, conclusion).letter_count
 end
 
 def period_count(beginning, middle, conclusion)
