@@ -9,7 +9,7 @@ class Farm
 
   def initialize
     # Plants have a name and a height
-    corn = ["Sugar Baby", 3]
+    corn = Plant.new("Sugar Baby", 3)
     radish_1 = ["Red Boomer", 1]
     radish_2 = ["Plump Pucker", 1]
     cucumber = ["Green Lady", 2]
