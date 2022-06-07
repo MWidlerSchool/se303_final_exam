@@ -38,4 +38,10 @@ class Letter
     middle.size + 
     conclusion.size
   end
+
+  def period_count()
+    beginning.scan(/\./).size +
+    middle.scan(/\./).size +
+    conclusion.scan(/\./).size
+  end
 end
