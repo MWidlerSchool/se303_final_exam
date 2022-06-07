@@ -21,8 +21,6 @@ end
 def repeat
   data = ["This", "is", "the", "data", "to", "use"]
   result = ""
-  (0..5).each do |i|
-    result += data[i]
-  end
+  (0..5).each {|i| result += data[i]}
   result
 end
