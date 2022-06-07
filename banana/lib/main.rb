@@ -18,3 +18,6 @@ def period_count(beginning, middle, conclusion)
   middle.scan(/\./).size +
   conclusion.scan(/\./).size
 end
+
+class Letter
+end
