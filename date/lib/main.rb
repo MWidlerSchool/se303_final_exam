@@ -35,8 +35,8 @@ class Farm
     total = 0
     plots.each do |plot|
       # Remove the plot name before iterating over the plants.
-      plot.drop(1).each do |plant|
-        total += plant[1]
+      plot.drop(1).each do |_plant|
+        total += _plant[1]
       end
     end
     total
