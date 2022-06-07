@@ -12,10 +12,6 @@ def letter_count(beginning, middle, conclusion)
 end
 
 def period_count(beginning, middle, conclusion)
-  letter = Letter.new(beginning, middle, conclusion)
-  letter.beginning.scan(/\./).size +
-  letter.middle.scan(/\./).size +
-  letter.conclusion.scan(/\./).size
   Letter.new(beginning, middle, conclusion).period_count
 end
 
