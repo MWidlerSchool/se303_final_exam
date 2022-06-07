@@ -8,10 +8,6 @@ def word_count(beginning, middle, conclusion)
 end
 
 def letter_count(beginning, middle, conclusion)
-  letter = Letter.new(beginning, middle, conclusion)
-  letter.beginning.size + 
-  letter.middle.size + 
-  letter.conclusion.size
   Letter.new(beginning, middle, conclusion).letter_count
 end
 
