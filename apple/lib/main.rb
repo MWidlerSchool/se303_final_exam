@@ -13,6 +13,10 @@ def story
   first + middle + conclusion
 end
 
-def getNewlines()
-  return "\n"
+def getNewlines(reps)
+  result = ""
+  for i in 1..reps
+    result << "\n"
+  end
+  result
 end
