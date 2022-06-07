@@ -50,6 +50,14 @@ class Farm
       @name = name
       @height = height
     end
+
+    def [](index)
+      if(index == 0)
+        name
+      else
+        height
+      end
+    end
   end
 
 end
