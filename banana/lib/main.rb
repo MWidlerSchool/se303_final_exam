@@ -11,13 +11,17 @@ def word_count(beginning, middle, conclusion)
 end
 
 def letter_count(beginning, middle, conclusion)
-  beginning.size + middle.size + conclusion.size
+  letter = Letter.new(beginning, middle, conclusion)
+  letter.beginning.size + 
+  letter.middle.size + 
+  letter.conclusion.size
 end
 
 def period_count(beginning, middle, conclusion)
-  beginning.scan(/\./).size +
-  middle.scan(/\./).size +
-  conclusion.scan(/\./).size
+  letter = Letter.new(beginning, middle, conclusion)
+  letter.beginning.scan(/\./).size +
+  letter.middle.scan(/\./).size +
+  letter.conclusion.scan(/\./).size
 end
 
 class Letter
